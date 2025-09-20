@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMS Video by @Dark_Mutant</title>
+  <style>
+    body { background:#111; color:#fff; text-align:center; font-family: Arial; }
+    iframe { width:80%; height:500px; margin-top:30px; border-radius:10px; }
+  </style>
+</head>
+<body>
+  <h1>Meri Website - Watch Video</h1>
+
+  <div id="player"></div>
+
+  <script>
+    // URL se videoId nikalna
+    const urlParams = new URLSearchParams(window.location.search);
+    const videoId = urlParams.get('id');
+
+    // YouTube embed
+    if(videoId){
+      document.getElementById("player").innerHTML = `
+        <iframe src="https://vk25cdn.viralkand.com/7000/${videoId}.mp4" 
+                frameborder="0" allowfullscreen></iframe>`;
+    }
+    if(videoId){
+      document.getElementById("player").innerHTML = `
+        <iframe src="https://vk25cdn.viralkand.com/7000/${videoId}.mp4" 
+                frameborder="0" allowfullscreen></iframe>`;
+    }
+    if(videoId){
+      document.getElementById("player").innerHTML = `
+        <iframe src="https://vk25cdn.viralkand.com/7000/${videoId}.mp4" 
+                frameborder="0" allowfullscreen></iframe>`;
+    }
+  </script>
+  <br><br><br><br>
+<footer style="text-align:center; padding:20px; background:#111; color:#fff;">
+  &copy; 2025 @Dark_Mutant. All rights reserved.
+</footer>
+</body>
+</html>
+
