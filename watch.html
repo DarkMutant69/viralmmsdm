@@ -20,43 +20,21 @@
     const videoId = urlParams.get('id');
 
     // YouTube embed
-      if (videoId) {
-  let prefix = videoId.substring(0, 1); // first digit
-
-  let baseUrl;
-  if (prefix === '7') {
-    baseUrl = '7000';
-  } else if (prefix === '6') {
-    baseUrl = '6000';
-  } else if (prefix === '5') {
-    baseUrl = '5000';
-  } else {
-    baseUrl = '7000'; // default
-  }
-
-  document.getElementById("player").innerHTML = `
-    <iframe src="https://vk25cdn.viralkand.com/${baseUrl}/${videoId}.mp4" 
-            frameborder="0" allowfullscreen></iframe>`;
-}
-
-
-
-    
-    // if(videoId){
-    //   document.getElementById("player").innerHTML = `
-    //     <iframe src="https://vk25cdn.viralkand.com/7000/${videoId}.mp4" 
-    //             frameborder="0" allowfullscreen></iframe>`;
-    // }
-    // elif(videoId){
-    //   document.getElementById("player").innerHTML = `
-    //     <iframe src="https://vk25cdn.viralkand.com/6000/${videoId}.mp4" 
-    //             frameborder="0" allowfullscreen></iframe>`;
-    // }
-    // elif(videoId){
-    //   document.getElementById("player").innerHTML = `
-    //     <iframe src="https://vk25cdn.viralkand.com/5000/${videoId}.mp4" 
-    //             frameborder="0" allowfullscreen></iframe>`;
-    // }
+    if(videoId){
+      document.getElementById("player").innerHTML = `
+        <iframe src="https://vk25cdn.viralkand.com/7000/${videoId}.mp4" 
+                frameborder="0" allowfullscreen></iframe>`;
+    }
+    elif(videoId){
+      document.getElementById("player").innerHTML = `
+        <iframe src="https://vk25cdn.viralkand.com/6000/${videoId}.mp4" 
+                frameborder="0" allowfullscreen></iframe>`;
+    }
+    elif(videoId){
+      document.getElementById("player").innerHTML = `
+        <iframe src="https://vk25cdn.viralkand.com/5000/${videoId}.mp4" 
+                frameborder="0" allowfullscreen></iframe>`;
+    }
   </script>
   <br><br><br><br>
 <footer style="text-align:center; padding:20px; background:#111; color:#fff;">
@@ -64,6 +42,7 @@
 </footer>
 </body>
 </html>
+
 
 
 
