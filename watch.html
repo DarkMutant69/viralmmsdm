@@ -15,36 +15,21 @@
   <div id="player"></div>
 
   <script>
-    // URL se videoId nikalna
+    // URL se videoId aur folder nikalna
     const urlParams = new URLSearchParams(window.location.search);
     const videoId = urlParams.get('id');
+    const folder = urlParams.get('folder') || "7000"; // default 7000
 
-    // YouTube embed
+    // Video embed
     if(videoId){
       document.getElementById("player").innerHTML = `
-        <iframe src="https://vk25cdn.viralkand.com/7000/${videoId}.mp4" 
-                frameborder="0" allowfullscreen></iframe>`;
-    }
-    elif(videoId){
-      document.getElementById("player").innerHTML = `
-        <iframe src="https://vk25cdn.viralkand.com/6000/${videoId}.mp4" 
-                frameborder="0" allowfullscreen></iframe>`;
-    }
-    elif(videoId){
-      document.getElementById("player").innerHTML = `
-        <iframe src="https://vk25cdn.viralkand.com/5000/${videoId}.mp4" 
+        <iframe src="https://vk25cdn.viralkand.com/${folder}/${videoId}.mp4" 
                 frameborder="0" allowfullscreen></iframe>`;
     }
   </script>
   <br><br><br><br>
-<footer style="text-align:center; padding:20px; background:#111; color:#fff;">
-  &copy; 2025 @Dark_Mutant. All rights reserved.
-</footer>
+  <footer style="text-align:center; padding:20px; background:#111; color:#fff;">
+    &copy; 2025 @Dark_Mutant. All rights reserved.
+  </footer>
 </body>
 </html>
-
-
-
-
-
-
